@@ -1,0 +1,331 @@
+<nav id="navbar">
+  <header>Python Documentation</header>
+  <ul>
+    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+    <li>
+      <a class="nav-link" href="#What_you_should_already_know">What you should already know</a>
+    </li>
+    <li>
+      <a class="nav-link" href="#Statements_and_control_flow">Statements and control flow</a>
+    </li>
+    <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+    <li><a class="nav-link" href="#Variables">Variables</a></li>
+    <li>
+      <a class="nav-link" href="#Python_variables_Types">Python variables Types</a>
+    </li>
+    <li><a class="nav-link" href="#Constants">Constants</a></li>
+    <li><a class="nav-link" href="#Python_NumPy">Python NumPy</a></li>
+    <li><a class="nav-link" href="#Python_Lists">Python Lists</a></li>
+    <li><a class="nav-link" href="#Python_Tuples">Python Tuples</a></li>
+    <li><a class="nav-link" href="#Python_Dictionaries">Python Dictionaries</a></li>
+    <li>
+      <a class="nav-link" href="#if...else_statement">if...else statement</a>
+    </li>
+    <li><a class="nav-link" href="#Python_Loops">Python Loops</a></li>
+    <li>
+      <a class="nav-link" href="#Python_Functions">Python_Functions</a>
+    </li>
+    <li><a class="nav-link" href="#Reference">Reference</a></li>
+  </ul>
+</nav>
+
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <article>
+      <p>
+        Python is meant to be an easily readable language. Its formatting is visually uncluttered, and it often uses English keywords where other languages use punctuation. Unlike many other languages, it does not use curly brackets to delimit blocks, and semicolons after statements are allowed but are rarely, if ever, used. It has fewer syntactic exceptions and special cases than C or Pascal.
+      </p>
+
+      <p>
+        Python uses whitespace indentation, rather than curly brackets or keywords, to delimit blocks. An increase in indentation comes after certain statements; a decrease in indentation signifies the end of the current block.
+      </p>
+    </article>
+  </section>
+
+  <section class="main-section" id="What_you_should_already_know">
+    <header>What you should already know</header>
+    <article>
+      <p>What can Python do?</p>
+      <ul>
+        <li>
+          Python can be used on a server to create web applications
+        </li>
+        <li>Python can be used alongside software to create workflows</li>
+        <li>
+          Python can connect to database systems. It can also read and modify files.
+        </li>
+        <li>Python can be used to handle big data and perform complex mathematics</li>
+        <li>Python can be used for rapid prototyping, or for production-ready software development</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="main-section" id="Statements_and_control_flow">
+    <header>Statements and control flow</header>
+    <article>
+      <p>
+        Python's statements include :
+      </p>
+      <ul>
+        <li>
+          The assignment statement, using a single equals sign =
+        </li>
+        <li>The if statement, which conditionally executes a block of code, along with else and elif</li>
+        <li>
+          The for statement, which iterates over an iterable object, capturing each element to a local variable for use by the attached block
+        </li>
+        <li>PThe while statement, which executes a block of code as long as its condition is true</li>
+        <li>The try statement, which allows exceptions raised in its attached code block to be caught and handled by except clauses; it also ensures that clean-up code in a finally block will always be run regardless of how the block exits</li>
+        <li>The raise statement, used to raise a specified exception or re-raise a caught exception</li>
+        <li>The class statement, which executes a block of code and attaches its local namespace to a class, for use in object-oriented programming</li>
+        <li>The def statement, which defines a function or method</li>
+        <li>The with statement, which encloses a code block within a context manager, allowing resource-acquisition-is-initialization (RAII)-like behavior and replaces a common try/finally idiom</li>
+        <li>The break statement, exits from a loop</li>
+        <li>The continue statement, skips this iteration and continues with the next item</li>
+        <li>The del statement, removes a variable, which means the reference from the name to the value is deleted and trying to use that variable will cause an error. A deleted variable can be reassigned</li>
+        <li>The pass statement, which serves as a NOP. It is syntactically needed to create an empty code block</li>
+        <li>The assert statement, used during debugging to check for conditions that should apply</li>
+        <li>The yield statement, which returns a value from a generator function. Yield is also an operator. This form is used to implement coroutines</li>
+        <li>The return statement, used to return a value from a function</li>
+        <li>The import statement, which is used to import modules whose functions or variables can be used in the current program.
+        </li>
+      </ul>
+    </article>
+  </section>
+
+<section class="main-section" id="Hello_world">
+    <header>Hello world</header>
+    <article>
+      <p>
+        To get started with writing Python, open the Scratchpad and write your first "Hello world" Python code:
+      </p>
+      <code>
+        print("Hello, World!")
+      </code>
+    </article>
+  </section>
+
+  <section class="main-section" id="Variables">
+    <header>Variables</header>
+    <article>
+    <p>
+      Python has no command for declaring a variable.
+      A variable is created the moment you first assign a value to it.
+    </p>
+    <p>
+      Variables do not need to be declared with any particular type, and can even change type after they have been set.
+    </p>
+    <p>
+      If you want to specify the data type of a variable, this can be done with casting.
+    </p>
+    </article>
+  </section>
+
+  <section class="main-section" id="Python_variables_Types">
+    <header>Python variables Types</header>
+    <article>
+      Python has five standard Data Types : 
+      <ul>
+        <li>Numbers</li>
+        <li>String</li>
+        <li>List</li>
+        <li>Tuple</li>
+        <li>Dictionary</li>
+      </ul>
+      <p>
+        Python sets the variable type based on the value that is assigned to it. Unlike more riggers languages, Python will change the variable type if the variable value is set to another value. For example:
+        <code>
+          var = 123 # This will create a number integer assignment
+          var = 'john' # the `var` variable is now a string type.
+        </code>
+      </p>
+    </article>
+  </section>
+
+  <section class="main-section" id="Constants">
+    <header>Constants</header>
+    <article>
+      <p>
+        A constant is a type of variable whose value cannot be changed. It is helpful to think of constants as containers that hold information which cannot be changed later.
+        You can think of constants as a bag to store some books which cannot be replaced once placed inside the bag.
+      </p>
+      Assigning value to constant in Python
+      <p>
+        In Python, constants are usually declared and assigned in a module. Here, the module is a new file containing variables, functions, etc which is imported to the main file. Inside the module, constants are written in all capital letters and underscores separating the words.
+      </p>
+      <code>PI = 3.14
+            GRAVITY = 9.8
+      </code>
+
+      <code>
+            import constant
+
+            print(constant.PI)
+            print(constant.GRAVITY)
+      </code
+      >
+    </article>
+  </section>
+
+  <section class="main-section" id="Python_NumPy">
+    <header>Python NumPy</header>
+    <article>
+      <p>NumPy is a Python library used for working with arrays. It also has functions for working in domain of linear algebra, fourier transform, and matrices. NumPy was created in 2005 by Travis Oliphant. It is an open source project and you can use it freely. NumPy stands for Numerical Python.
+      </p>
+      <p>
+        NumPy is an open-source numerical Python library. NumPy contains a multi-dimensional array and matrix data structures. It can be utilised to perform a number of mathematical operations on arrays such as trigonometric, statistical, and algebraic routines. Therefore, the library contains a large number of mathematical, algebraic, and transformation functions. NumPy is an extension of Numeric and Numarray. Numpy also contains random number generators. NumPy is a wrapper around a library implemented in C. Pandas objects rely heavily on NumPy objects. Essentially, Pandas extends Numpy
+      </p>
+      <code>
+        import numpy as np 
+        a = np.array([1,2,3])
+      </code>
+    </article>
+  </section>
+
+  <section class="main-section" id="Python_Lists">
+    <header>Python Lists</header>
+    <article>
+      <p>
+        Lists are used to store multiple items in a single variable. Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage.
+        Lists are created using square brackets:
+      </p>
+      Example
+      <code>
+        mylist = ["apple", "banana", "cherry"]
+      </code>
+    </article>
+  </section>
+
+  <section class="main-section" id="Python_Tuples">
+    <header>Python Tuples</header>
+    <article>
+      <p>
+      Tuples are used to store multiple items in a single variable. Tuple is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Set, and Dictionary, all with different qualities and usage. A tuple is a collection which is ordered and unchangeable.
+      Tuples are written with round brackets.
+      </p>
+      Example
+      <code>
+        mytuple = ("apple", "banana", "cherry")
+      </code>
+    </article>
+  </section>
+
+  <section class="main-section" id="Python_Dictionaries">
+    <header>Python Dictionaries</header>
+    <article>
+      <p>
+        Dictionaries are used to store data values in key:value pairs.
+        A dictionary is a collection which is ordered*, changeable and does not allow duplicates.
+      </p>
+      <p>
+        Dictionary items are ordered, changeable, and does not allow duplicates.
+        Dictionary items are presented in key:value pairs, and can be referred to by using the key name.
+        Dictionaries are written with curly brackets, and have keys and values:
+      </p>
+      Example
+      <code>
+        thisdict = {
+                    "brand": "Ford",
+                    "model": "Mustang",
+                    "year": 1964
+                  }
+      </code>
+    </article>
+  </section>
+
+  <section class="main-section" id="if...else_statement">
+    <header>if...else statement</header>
+    <article>
+      Decision making is required when we want to execute a code only if a certain condition is satisfied.
+      The if…elif…else statement is used in Python for decision making.
+
+      <code>if test expression:
+              statement(s)
+      </code>
+      Here, the program evaluates the test expression and will execute statement(s) only if the test expression is True. If the test expression is False, the statement(s) is not executed. In Python, the body of the if statement is indicated by the indentation. The body starts with an indentation and the first unindented line marks the end. Python interprets non-zero values as True. None and 0 are interpreted as False.
+      <p>
+        Python supports the usual logical conditions from mathematics :
+      </p>
+      <ul>
+        <li>Equals: a == b</li>
+        <li>Not Equals: a != b</li>
+        <li>Less than: a < b</li>
+        <li>Less than or equal to: a <= b</li>
+        <li>Greater than: a > b</li>
+        <li>Greater than or equal to: a >= b</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="main-section" id="Python_Loops">
+    <header>Python Loops</header>
+    <article>
+      <h2><strong>For</strong></h2>
+      <p>
+        A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string). This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages. With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.
+      </p>
+      <code>
+        fruits = ["apple", "banana", "cherry"]
+        for x in fruits:
+          print(x)
+      </code> 
+      <p>The for loop does not require an indexing variable to set beforehand.</p>
+      <h2><strong>While</strong></h2>
+      <p>
+        The while loop in Python is used to iterate over a block of code as long as the test expression (condition) is true. We generally use this loop when we don't know the number of times to iterate beforehand.
+      </p>
+      <code>while test_expression:
+              Body of while
+      </code> 
+      <p>
+        In the while loop, test expression is checked first. The body of the loop is entered only if the test_expression evaluates to True. After one iteration, the test expression is checked again. This process continues until the test_expression evaluates to False. In Python, the body of the while loop is determined through indentation. The body starts with indentation and the first unindented line marks the end. Python interprets any non-zero value as True. None and 0 are interpreted as False.
+      </p>
+    </article>
+  </section>
+
+  <section class="main-section" id="Python_Functions">
+    <header>Python Functions</header>
+    <article>
+      <p>
+        In Python, a function is a group of related statements that performs a specific task. Functions help break our program into smaller and modular chunks. As our program grows larger and larger, functions make it more organized and manageable. Furthermore, it avoids repetition and makes the code reusable.
+        In Python a function is defined using the def keyword:
+      </p>
+      <code>
+        def function_name(parameters):
+          """docstring"""
+          statement(s)
+      </code>
+      Above shown is a function definition that consists of the following components :
+      <ul>
+          <ol>Keyword def that marks the start of the function header</ol>
+          <ol>A function name to uniquely identify the function. Function naming follows the same rules of writing identifiers in Python</ol>
+          <ol>Parameters (arguments) through which we pass values to a function. They are optional</ol>
+          <ol>A colon (:) to mark the end of the function header</ol>
+          <ol>Optional documentation string (docstring) to describe what the function does</ol>
+          <ol>One or more valid python statements that make up the function body. Statements must have the same indentation level (usually 4 spaces)</ol>
+          <ol>An optional return statement to return a value from the function</ol>
+      </ul>
+    </article>
+  </section>
+
+  <section class="main-section" id="Reference">
+    <header>Reference</header>
+    <article>
+      <ul>
+        <li>
+          All the documentation in this page is taken from
+          <a
+            href="https://www.programiz.com/"
+            target="_blank"
+            >programiz</a> and <a
+            href="https://www.w3schools.com/python/default.asp"
+            target="_blank"
+            >w3schools</a>
+        </li>
+      </ul>
+    </article>
+  </section>
+</main>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>

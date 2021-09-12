@@ -1,0 +1,174 @@
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">University registration form</h1>
+    <p id="description" class="description text-center">
+      Thank you for taking the time to fill the form
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">First name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="name-label" for="name">Middle name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+      />
+    </div>
+    <div class="form-group">
+      <label id="name-label" for="name">Familly name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue"></span></label>
+      <input
+        type="date"
+        name="age"
+        id="number"
+        min="18"
+        max="130"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+
+    <div class="form-group">
+      <p>Sexe</p>
+      <label id='line'>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Male</label>
+      <label id='line'>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Female</label>
+
+      <label id='line'>
+        <input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Other</label>
+    </div>
+
+    <div class="form-group">
+      <p>Which option best describes your current role?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current role</option>
+        <option value="student">Student</option>
+        <option value="undergraduate ">Undergraduate</option>
+        <option value="job">Full Time Job</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        Grade?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="F">00 - 59%</option>
+        <option value="D">60 - 69%</option>
+        <option value="C">70 - 79%</option>
+        <option value="B">80 - 89%</option>
+        <option value="A">90 - 100% Source</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        Choose a program to study?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="front-end-projects"
+          type="checkbox"
+          class="input-checkbox"
+        />ART AND DESIGN</label>
+      <label>
+        <input
+          name="prefer"
+          value="back-end-projects"
+          type="checkbox"
+          class="input-checkbox"
+        />BUSINESS</label>
+      <label
+        ><input
+          name="prefer"
+          value="data-visualization"
+          type="checkbox"
+          class="input-checkbox"
+        />Medicine and Medical Sciences </label>
+      <label
+        ><input
+          name="prefer"
+          value="challenges"
+          type="checkbox"
+          class="input-checkbox"
+        />Law</label>
+      <label
+        ><input
+          name="prefer"
+          value="open-source-community"
+          type="checkbox"
+          class="input-checkbox"
+        />Engineering and Technology</label>
+      <label
+        ><input
+          name="prefer"
+          value="gitter-help-rooms"
+          type="checkbox"
+          class="input-checkbox"
+        />English and Literary Studies</label>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>

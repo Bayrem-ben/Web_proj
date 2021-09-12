@@ -1,0 +1,32 @@
+  #righ {
+    text-align: right;
+    right: 10px;
+    position: absolute;
+  }
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  font-size: 4.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+  color: white;
+}
+
+.contact-details:hover {
+  transform: translateY(8px);
+  color: blue;
+}
+
+#pos_line {
+  top: 1em;
+  bottom: 1em;
+  position: relative;
+}
