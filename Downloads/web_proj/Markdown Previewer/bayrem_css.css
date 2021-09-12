@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+$darkAccent: #224b4b;
+
+.theme {
+  background-color: #E8FAFF;
+}
+h1 {
+    border-bottom: 2px solid $darkAccent;
+    text-align: center;
+    color: 1324F4;
+}
+hr {
+  padding-top: 0px;
+  margin-top: 0px;
+  border-color: $borders;
+  margin-bottom: 10px;
+}
+
+.container-fluid {
+  background-color: white;
+  border: 2px dashed #040A59;
+  padding: 20px;
+  /*height: auto;*/
+  min-height: 200px;
+  max-height: 800px;
+}
+@media screen and (max-height: 800px) {
+  border: 2px solid red;
+}
+@media screen and (min-height: 200px) {
+  border: 2px dashed #040A59;
+}
+
+/*
+.container-fluid {
+    max-width: make-container;
+    padding:30px; // Whitespace or outside gutter
+}
+@media make-container($padding-x: $container-padding-x) {
+  width: 80%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+*/
